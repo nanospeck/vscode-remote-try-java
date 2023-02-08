@@ -15,7 +15,12 @@ public class App {
 
         String c = "hi";
         String d = "hi"; // String constant pool in heap
+
         System.out.println(c==d); // true 
+        
+        System.out.println(a==c); // false - meaningfully equal but stored in different mem locations
+
+        System.out.println(a.equals(c)); // true - meaningfully equal 
 
     }
 }

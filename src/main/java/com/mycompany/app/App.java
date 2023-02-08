@@ -7,6 +7,15 @@ package com.mycompany.app;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello Remote World!");
+
+        
+        String a = new String("hi");
+        String b = new String("hi"); // new object in heap
+        System.out.println(a==b); // false
+
+        String c = "hi";
+        String d = "hi"; // String constant pool in heap
+        System.out.println(c==d); // true 
+
     }
 }
